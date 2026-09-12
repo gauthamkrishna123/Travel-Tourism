@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      /* background-color: rgb(250, 248, 248); */
+      
+    }
+
+     body{
+        border: 10px solid rgb(57, 2, 66);
+     }
+  nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 70px;
+  background-color: rgb(42, 3, 79);
+  color: aliceblue;
+  align-items: center;
+  padding: 0% 15%;
+  
+  animation: color 6s ease-in-out infinite;
+}
+@keyframes color{
+  0%{background-color: rgb(228, 193, 13);}
+  25%{background-color: rgb(252, 41, 22);}
+  50%{background-color: rgb(20, 20, 220);}
+  75%{background-color: darkmagenta;}
+  100%{background-color: rgb(246, 173, 4);}
+}
+.navlist {
+  display: flex;
+
+  gap: 10%;
+}
+nav h1 span {
+  color: rgb(9, 225, 9);
+}
+nav h1{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navlist li {
+  list-style: none;
+}
+.navlist li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.navlist li a:hover {
+  color: rgb(35, 174, 234);
+  /* background:linear-gradient(90deg,rgb(4, 252, 45),white); */
+}
+
+     main{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      padding: 0% 5%;
+      
+     }
+    header{
+        text-align: center;
+        /* margin: 2% 2%; */
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: clamp(1.5rem,1rem,2rem);
+        color: rgb(127, 11, 3);
+        letter-spacing: 2px;
+        text-shadow: 6px 5px 5px gray;
+        text-decoration:underline;
+    }
+
+    .gallery {
+        background: radial-gradient(circle,rgb(245, 242, 242),rgb(240, 242, 240));
+      padding: 0px 9px;
+      
+    }
+    .gallery img {
+      margin-top: 5px;
+      vertical-align: middle;
+      width: 100%;
+      transition: 0.8s;
+    }
+    .gallery img:hover{
+      transform: translateY(-7px);
+    }
+    @media screen and (max-width: 800px) {
+        main{
+            /* flex: 50%;*/
+            /* max-width: 50%;  */
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    @media screen and (max-width: 600px) {
+        main{
+            /* flex: 100%;*/
+            /* max-width: 100%;  */
+            grid-template-columns: 1fr;
+        }
+    }
+    .home a{
+        display: flex;
+        text-decoration: none;
+        width: fit-content;
+        padding: 5px 10px;
+        background-color: rgb(175, 5, 87);
+        margin-left: 10%;
+        margin-top: 2%;
+        color: azure;
+        border-radius: 3px;
+
+    }
+  </style>
+  <body>
+      <nav>
+      <h1>Explore <span>Kerala</span> </h1>
+      <ul class="navlist">
+        <li><a href="indux.html">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="booknow.html">Packeges</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+        <!-- <div class="home"><a href="./indux.html">Back To Home</a></div> -->
+
+    <header> <h2>MEMORIES IN FRAME</h2></header>
+    
+    <main>
+      <div class="gallery">
+        <img src="./media/gallery/10.jpg" alt="">
+        <img src="./media/gallery/11.jpg" alt="">
+        <img src="./media/gallery/12.jpg" alt="">
+        <img src="./media/gallery/13.jpg" alt="">
+      </div>
+      <div class="gallery">
+        <img src="./media/gallery/14.jpg" alt="">
+        <img src="./media/gallery/15.jpg" alt="">
+        <img src="./media/gallery/16.jpg" alt="">
+        <img src="./media/gallery/3.jpg" alt="">
+        <img src="./media/gallery/17.jpg" alt="">
+      </div>
+      <div class="gallery">
+        <img src="./media/gallery/4.jpg" alt="">
+        <img src="./media/gallery/5.jpg" alt="">
+        <img src="./media/gallery/6.jpg" alt="">
+        <img src="./media/gallery/7.jpg" alt="">
+      </div>
+      <div class="gallery">
+        <img src="./media/gallery/8.jpg" alt="">
+        <img src="./media/gallery/9.jpg" alt="">
+        <img src="./media/gallery/img1.jpg" alt="">
+        <img src="./media/gallery/img2.jpg" alt="">
+        <img src="./media/gallery/11.jpg" alt="">
+      </div>
+    </main>
+  </body>
+</html>

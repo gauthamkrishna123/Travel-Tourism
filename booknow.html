@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Now | Explore Kerala</title>
+
+    <link rel="stylesheet" href="booknow.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+        <h1>Explore <span>Kerala</span></h1>
+
+        <ul class="navlist">
+            <li><a href="indux.html">Home</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booknow.html" class="active">Book Now</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+            <h2>Book Your Kerala Adventure</h2>
+
+            <p>
+                Discover the beauty of Kerala and create unforgettable
+                memories with our specially designed travel packages.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING SECTION ================= -->
+
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="booking-info">
+
+                <h2>Plan Your Journey</h2>
+
+                <p>
+                    Fill out the booking form and get ready to explore
+                    God's Own Country.
+                </p>
+
+                <div class="info-box">
+                    <h3>🌴 Beautiful Destinations</h3>
+                    <p>
+                        Explore Munnar, Alleppey, Wayanad, Kochi and
+                        many more beautiful places.
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h3>🏨 Comfortable Stay</h3>
+                    <p>
+                        Enjoy comfortable accommodation and a relaxing
+                        travel experience.
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h3>🚗 Easy Transportation</h3>
+                    <p>
+                        Travel conveniently with our reliable
+                        transportation services.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE BOOKING FORM -->
+
+            <div class="booking-form">
+
+                <h2>Book Your Trip</h2>
+
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter phone number"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+
+                            <select id="destination" required>
+
+                                <option value="">Select destination</option>
+                                <option value="munnar">Munnar</option>
+                                <option value="alleppey">Alleppey</option>
+                                <option value="wayanad">Wayanad</option>
+                                <option value="kochi">Kochi</option>
+                                <option value="thekkady">Thekkady</option>
+                                <option value="kovalam">Kovalam</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="date">Travel Date</label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="guests">
+                                Number of Guests
+                            </label>
+
+                            <input
+                                type="number"
+                                id="guests"
+                                min="1"
+                                max="20"
+                                placeholder="Number of guests"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="package">
+                            Select Package
+                        </label>
+
+                        <select id="package" required>
+
+                            <option value="">
+                                Select a package
+                            </option>
+
+                            <option value="kerala-explorer">
+                                Kerala Explorer
+                            </option>
+
+                            <option value="nature-adventure">
+                                Nature Adventure
+                            </option>
+
+                            <option value="backwaters">
+                                Backwater Experience
+                            </option>
+
+                            <option value="premium">
+                                Premium Kerala Tour
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="message">
+                            Special Requirements
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Any special requirements..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit">
+                        Book Now
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>Explore Kerala</h2>
+
+            <p>
+                Discover the beauty, culture and traditions of
+                God's Own Country.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="indux.html">Home</a>
+                <a href="destination.html">Destination</a>
+                <a href="packages.html">Packages</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Explore Kerala. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
